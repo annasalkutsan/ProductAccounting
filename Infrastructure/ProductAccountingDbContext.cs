@@ -15,10 +15,7 @@ public class ProductAccountingDbContext : DbContext
 
     public DbSet<Manufacturer> Manufacturers { get; set; }
     public DbSet<Category> Categories { get; set; }
-    public DbSet<Batch> Batches { get; set; }
     public DbSet<Product> Products { get; set; }
-    public DbSet<ProductItem> ProductItems { get; set; }
-
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         base.OnModelCreating(modelBuilder);
@@ -29,10 +26,6 @@ public class ProductAccountingDbContext : DbContext
 
         modelBuilder.Entity<Category>()
             .HasIndex(c => c.Name)
-            .IsUnique();
-
-        modelBuilder.Entity<Batch>()
-            .HasIndex(b => b.BatchNumber)
             .IsUnique();
     }
 }

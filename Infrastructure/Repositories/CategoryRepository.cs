@@ -19,29 +19,29 @@ public class CategoryRepository : ICategoryRepository
     /// <summary>
     /// Получить категорию по ID.
     /// </summary>
-    public async Task<Category?> GetByIdAsync(Guid id)
+    public Category? GetById(Guid id)
     {
-        return await _dbContext.Categories
-            .FirstOrDefaultAsync(c => c.CategoryId == id);
+        return _dbContext.Categories
+            .FirstOrDefault(c => c.CategoryId == id);
     }
 
     /// <summary>
     /// Получить категорию по названию.
     /// </summary>
-    public async Task<Category?> GetByNameAsync(string name)
+    public Category? GetByName(string name)
     {
-        return await _dbContext.Categories
-            .FirstOrDefaultAsync(c => c.Name.Equals(name, StringComparison.OrdinalIgnoreCase));
+        return _dbContext.Categories
+            .FirstOrDefault(c => c.Name==name);
     }
 
     /// <summary>
     /// Получить все категории.
     /// </summary>
-    public async Task<ICollection<Category>> GetAllAsync()
+    public ICollection<Category> GetAll()
     {
-        return await _dbContext.Categories
+        return _dbContext.Categories
             .AsNoTracking()
-            .ToListAsync();
+            .ToList();
     }
 
     /// <summary>
@@ -67,9 +67,9 @@ public class CategoryRepository : ICategoryRepository
     /// <summary>
     /// Удалить категорию.
     /// </summary>
-    public async Task DeleteAsync(Category category)
+    public void Delete(Category category)
     {
-        _dbContext.Categories.Remove(category);
-        await _dbContext.SaveChangesAsync();
+        _dbContext.Categories.Remove(category); 
+        _dbContext.SaveChanges();
     }
 }

@@ -20,73 +20,61 @@ public class ProductService
     }
 
     // Добавление товара
-    public async Task<Guid> AddProductAsync(string name, string manufacturerName, string categoryName, decimal price)
+    public Guid AddProduct(string name, decimal price, DateTime expiryDate, string baschNumber, Guid manufacturerId, Guid categoryId)
     {
-        var manufacturer = await _manufacturerRepository.GetByNameAsync(manufacturerName);
-        var category = await _categoryRepository.GetByNameAsync(categoryName);
-
-        if (manufacturer == null || category == null)
-            throw new ArgumentException("Производитель или категория не найдены.");
-
-        var product = new Product
-        {
-            Name = name,
-            ManufacturerId = manufacturer.ManufacturerId,
-            CategoryId = category.CategoryId,
-            Price = price
-        };
-
+       var product = new Product(name, price, expiryDate, baschNumber, categoryId, manufacturerId);
+ 
         return _productRepository.Add(product);
     }
 
     // Обновление товара
-    public async Task<Guid> UpdateProductAsync(Guid productId, string name, string manufacturerName,
-        string categoryName, decimal price)
+    public Guid UpdateProduct(Guid productId, string name, decimal price, DateTime expiryDate, string baschNumber, Guid manufacturerId, Guid categoryId)
     {
-        var product = await _productRepository.GetByIdAsync(productId);
+        var product = _productRepository.GetById(productId);
         if (product == null)
             throw new ArgumentException("Товар не найден.");
 
-        var manufacturer = await _manufacturerRepository.GetByNameAsync(manufacturerName);
-        var category = await _categoryRepository.GetByNameAsync(categoryName);
-
-        if (manufacturer == null || category == null)
-            throw new ArgumentException("Производитель или категория не найдены.");
-
         product.Name = name;
-        product.ManufacturerId = manufacturer.ManufacturerId;
-        product.CategoryId = category.CategoryId;
+        product.ManufacturerId = manufacturerId;
+        product.CategoryId = categoryId;
         product.Price = price;
+        product.ExpiryDate = expiryDate.ToUniversalTime();
+        product.BatchNumber = baschNumber;
 
         return _productRepository.Update(product);
     }
 
     // Удаление товара
-    public async Task DeleteProductAsync(Guid productId)
+    public void DeleteProduct(Guid productId)
     {
-        var product = await _productRepository.GetByIdAsync(productId);
+        var product = _productRepository.GetById(productId);
         if (product == null)
             throw new ArgumentException("Товар не найден.");
 
-        await _productRepository.DeleteAsync(product);
+        _productRepository.Delete(product);
     }
 
     // Получить товар по ID
-    public async Task<Product?> GetProductByIdAsync(Guid productId)
+    public Product? GetProductById(Guid productId)
     {
-        return await _productRepository.GetByIdAsync(productId);
+        return _productRepository.GetById(productId);
     }
 
     // Получить все товары
-    public async Task<ICollection<Product>> GetAllProductsAsync()
+    public ICollection<Product> GetAllProducts()
     {
-        return await _productRepository.GetAllAsync();
+        return _productRepository.GetAll();
     }
 
     // Получить товар по названию производителя, категории или номеру партии
-    public async Task<Product?> GetProductByDetailsAsync(string name, string manufacturerName, string categoryName,
-        string batchNumber)
+    public Product? GetProductByDetails(string name)
     {
-        return await _productRepository.GetByDetailsAsync(name, manufacturerName, categoryName, batchNumber);
+        return _productRepository.GetByDetails(name);
+    }
+
+    // Получить товарные единицы со скидкой из-за срока годности
+    public ICollection<Product> GetDiscountedProducts()
+    {
+        return _productRepository.GetDiscountedProducts();
     }
 }

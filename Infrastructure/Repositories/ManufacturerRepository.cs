@@ -19,29 +19,29 @@ public class ManufacturerRepository : IManufacturerRepository
     /// <summary>
     /// Получить производителя по ID.
     /// </summary>
-    public async Task<Manufacturer?> GetByIdAsync(Guid id)
+    public Manufacturer? GetById(Guid id)
     {
-        return await _dbContext.Manufacturers
-            .FirstOrDefaultAsync(m => m.ManufacturerId == id);
+        return _dbContext.Manufacturers
+            .FirstOrDefault(m => m.ManufacturerId == id);
     }
 
     /// <summary>
     /// Получить производителя по названию.
     /// </summary>
-    public async Task<Manufacturer?> GetByNameAsync(string name)
+    public Manufacturer? GetByName(string name)
     {
-        return await _dbContext.Manufacturers
-            .FirstOrDefaultAsync(m => m.Name.Equals(name, StringComparison.OrdinalIgnoreCase));
+        return _dbContext.Manufacturers
+            .FirstOrDefault(m => m.Name == name);
     }
 
     /// <summary>
     /// Получить всех производителей.
     /// </summary>
-    public async Task<ICollection<Manufacturer>> GetAllAsync()
+    public ICollection<Manufacturer> GetAll()
     {
-        return await _dbContext.Manufacturers
+        return _dbContext.Manufacturers
             .AsNoTracking()
-            .ToListAsync();
+            .ToList();
     }
 
     /// <summary>
@@ -67,9 +67,9 @@ public class ManufacturerRepository : IManufacturerRepository
     /// <summary>
     /// Удалить производителя.
     /// </summary>
-    public async Task DeleteAsync(Manufacturer manufacturer)
+    public void Delete(Manufacturer manufacturer)
     {
         _dbContext.Manufacturers.Remove(manufacturer);
-        await _dbContext.SaveChangesAsync();
+        _dbContext.SaveChanges();
     }
 }

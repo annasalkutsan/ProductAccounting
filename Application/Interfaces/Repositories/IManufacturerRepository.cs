@@ -7,10 +7,10 @@ namespace Application.Interfaces.Repositories;
 /// </summary>
 public interface IManufacturerRepository
 {
-    Task<Manufacturer?> GetByIdAsync(Guid id);
-    Task<Manufacturer?> GetByNameAsync(string name);
-    Task<ICollection<Manufacturer>> GetAllAsync();
+    Manufacturer? GetById(Guid id);
+    Manufacturer? GetByName(string name);
+    ICollection<Manufacturer> GetAll();
     Guid Add(Manufacturer manufacturer);
     Guid Update(Manufacturer manufacturer);
-    Task DeleteAsync(Manufacturer manufacturer);
+    void Delete(Manufacturer manufacturer);
 }

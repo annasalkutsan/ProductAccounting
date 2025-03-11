@@ -7,6 +7,13 @@ namespace Domain.Entities;
 /// </summary>
 public class Manufacturer
 {
+    public Manufacturer(string name, string contactInfo)
+    {
+        ManufacturerId = Guid.NewGuid();
+        Name = name;
+        ContactInfo = contactInfo;
+    }
+    
     /// <summary>
     /// Уникальный идентификатор производителя.
     /// </summary>
@@ -24,11 +31,6 @@ public class Manufacturer
     /// </summary>
     [MaxLength(500)]
     public string? ContactInfo { get; set; }
-
-    /// <summary>
-    /// Список партий товаров, произведенных этим производителем.
-    /// </summary>
-    public ICollection<Batch> Batches { get; set; } = new List<Batch>();
 
     /// <summary>
     /// Список товаров, произведенных этим производителем.

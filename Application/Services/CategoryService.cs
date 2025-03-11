@@ -13,24 +13,21 @@ public class CategoryService
     }
 
     // Добавление категории
-    public async Task<Guid> AddCategoryAsync(string name)
+    public Guid AddCategory(string name)
     {
-        var existingCategory = await _categoryRepository.GetByNameAsync(name);
+        var existingCategory = _categoryRepository.GetByName(name);
         if (existingCategory != null)
             throw new ArgumentException("Категория с таким названием уже существует.");
 
-        var category = new Category
-        {
-            Name = name
-        };
+        var category = new Category(name);
 
         return _categoryRepository.Add(category);
     }
 
     // Обновление категории
-    public async Task<Guid> UpdateCategoryAsync(Guid categoryId, string name)
+    public Guid UpdateCategory(Guid categoryId, string name)
     {
-        var category = await _categoryRepository.GetByIdAsync(categoryId);
+        var category = _categoryRepository.GetById(categoryId);
         if (category == null)
             throw new ArgumentException("Категория не найдена.");
 
@@ -40,30 +37,30 @@ public class CategoryService
     }
 
     // Удаление категории
-    public async Task DeleteCategoryAsync(Guid categoryId)
+    public void DeleteCategory(Guid categoryId)
     {
-        var category = await _categoryRepository.GetByIdAsync(categoryId);
+        var category = _categoryRepository.GetById(categoryId);
         if (category == null)
             throw new ArgumentException("Категория не найдена.");
 
-        await _categoryRepository.DeleteAsync(category);
+        _categoryRepository.Delete(category);
     }
 
     // Получить категорию по ID
-    public async Task<Category?> GetCategoryByIdAsync(Guid categoryId)
+    public Category? GetCategoryById(Guid categoryId)
     {
-        return await _categoryRepository.GetByIdAsync(categoryId);
+        return _categoryRepository.GetById(categoryId);
     }
 
     // Получить все категории
-    public async Task<ICollection<Category>> GetAllCategoriesAsync()
+    public ICollection<Category> GetAllCategories()
     {
-        return await _categoryRepository.GetAllAsync();
+        return _categoryRepository.GetAll();
     }
 
     // Получить категорию по названию
-    public async Task<Category?> GetCategoryByNameAsync(string name)
+    public Category? GetCategoryByName(string name)
     {
-        return await _categoryRepository.GetByNameAsync(name);
+        return _categoryRepository.GetByName(name);
     }
 }

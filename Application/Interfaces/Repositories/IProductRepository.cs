@@ -10,22 +10,22 @@ public interface IProductRepository
     /// <summary>
     /// Получить товар по ID.
     /// </summary>
-    Task<Product?> GetByIdAsync(Guid id);
+    Product? GetById(Guid id);
 
     /// <summary>
     /// Получить товар по названию, производителю, категории или номеру партии.
     /// </summary>
-    Task<Product?> GetByDetailsAsync(string? name, string? manufacturer, string? category, string? batchNumber);
+    Product? GetByDetails(string? name);
 
     /// <summary>
     /// Получить все товары.
     /// </summary>
-    Task<ICollection<Product>> GetAllAsync();
+    ICollection<Product> GetAll();
 
     /// <summary>
     /// Получить товары, которые находятся на скидке из-за истечения срока годности.
     /// </summary>
-    Task<ICollection<ProductItem>> GetDiscountedProductsAsync();
+    ICollection<Product> GetDiscountedProducts();
 
     /// <summary>
     /// Добавить новый товар.
@@ -40,5 +40,5 @@ public interface IProductRepository
     /// <summary>
     /// Удалить товар.
     /// </summary>
-    Task DeleteAsync(Product product);
+    void Delete(Product product);
 }

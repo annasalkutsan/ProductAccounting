@@ -7,6 +7,12 @@ namespace Domain.Entities;
 /// </summary>
 public class Category
 {
+    public Category(string name)
+    {
+        CategoryId=Guid.NewGuid(); 
+        Name=name;
+    }
+
     /// <summary>
     /// Уникальный идентификатор категории.
     /// </summary>

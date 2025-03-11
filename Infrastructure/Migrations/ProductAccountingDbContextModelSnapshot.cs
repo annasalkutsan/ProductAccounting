@@ -22,42 +22,11 @@ namespace Infrastructure.Migrations
 
             NpgsqlModelBuilderExtensions.UseIdentityByDefaultColumns(modelBuilder);
 
-            modelBuilder.Entity("Domain.Entities.Batch", b =>
-                {
-                    b.Property<int>("BatchId")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("integer");
-
-                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("BatchId"));
-
-                    b.Property<string>("BatchNumber")
-                        .IsRequired()
-                        .HasMaxLength(50)
-                        .HasColumnType("character varying(50)");
-
-                    b.Property<DateTime>("ManufactureDate")
-                        .HasColumnType("timestamp with time zone");
-
-                    b.Property<int>("ManufacturerId")
-                        .HasColumnType("integer");
-
-                    b.HasKey("BatchId");
-
-                    b.HasIndex("BatchNumber")
-                        .IsUnique();
-
-                    b.HasIndex("ManufacturerId");
-
-                    b.ToTable("Batches");
-                });
-
             modelBuilder.Entity("Domain.Entities.Category", b =>
                 {
-                    b.Property<int>("CategoryId")
+                    b.Property<Guid>("CategoryId")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("integer");
-
-                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("CategoryId"));
+                        .HasColumnType("uuid");
 
                     b.Property<string>("Name")
                         .IsRequired()
@@ -74,11 +43,9 @@ namespace Infrastructure.Migrations
 
             modelBuilder.Entity("Domain.Entities.Manufacturer", b =>
                 {
-                    b.Property<int>("ManufacturerId")
+                    b.Property<Guid>("ManufacturerId")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("integer");
-
-                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("ManufacturerId"));
+                        .HasColumnType("uuid");
 
                     b.Property<string>("ContactInfo")
                         .HasMaxLength(500)
@@ -99,17 +66,22 @@ namespace Infrastructure.Migrations
 
             modelBuilder.Entity("Domain.Entities.Product", b =>
                 {
-                    b.Property<int>("ProductId")
+                    b.Property<Guid>("ProductId")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("integer");
+                        .HasColumnType("uuid");
 
-                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("ProductId"));
+                    b.Property<string>("BatchNumber")
+                        .IsRequired()
+                        .HasColumnType("text");
 
-                    b.Property<int>("CategoryId")
-                        .HasColumnType("integer");
+                    b.Property<Guid>("CategoryId")
+                        .HasColumnType("uuid");
 
-                    b.Property<int>("ManufacturerId")
-                        .HasColumnType("integer");
+                    b.Property<DateTime>("ExpiryDate")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.Property<Guid>("ManufacturerId")
+                        .HasColumnType("uuid");
 
                     b.Property<string>("Name")
                         .IsRequired()
@@ -126,49 +98,6 @@ namespace Infrastructure.Migrations
                     b.HasIndex("ManufacturerId");
 
                     b.ToTable("Products");
-                });
-
-            modelBuilder.Entity("Domain.Entities.ProductItem", b =>
-                {
-                    b.Property<int>("ProductItemId")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("integer");
-
-                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("ProductItemId"));
-
-                    b.Property<int>("BatchId")
-                        .HasColumnType("integer");
-
-                    b.Property<DateTime>("ExpiryDate")
-                        .HasColumnType("timestamp with time zone");
-
-                    b.Property<int>("ProductId")
-                        .HasColumnType("integer");
-
-                    b.Property<DateTime?>("PurchaseDate")
-                        .HasColumnType("timestamp with time zone");
-
-                    b.Property<int>("Quantity")
-                        .HasColumnType("integer");
-
-                    b.HasKey("ProductItemId");
-
-                    b.HasIndex("BatchId");
-
-                    b.HasIndex("ProductId");
-
-                    b.ToTable("ProductItems");
-                });
-
-            modelBuilder.Entity("Domain.Entities.Batch", b =>
-                {
-                    b.HasOne("Domain.Entities.Manufacturer", "Manufacturer")
-                        .WithMany("Batches")
-                        .HasForeignKey("ManufacturerId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Manufacturer");
                 });
 
             modelBuilder.Entity("Domain.Entities.Product", b =>
@@ -190,30 +119,6 @@ namespace Infrastructure.Migrations
                     b.Navigation("Manufacturer");
                 });
 
-            modelBuilder.Entity("Domain.Entities.ProductItem", b =>
-                {
-                    b.HasOne("Domain.Entities.Batch", "Batch")
-                        .WithMany("ProductItems")
-                        .HasForeignKey("BatchId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("Domain.Entities.Product", "Product")
-                        .WithMany("ProductItems")
-                        .HasForeignKey("ProductId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Batch");
-
-                    b.Navigation("Product");
-                });
-
-            modelBuilder.Entity("Domain.Entities.Batch", b =>
-                {
-                    b.Navigation("ProductItems");
-                });
-
             modelBuilder.Entity("Domain.Entities.Category", b =>
                 {
                     b.Navigation("Products");
@@ -221,14 +126,7 @@ namespace Infrastructure.Migrations
 
             modelBuilder.Entity("Domain.Entities.Manufacturer", b =>
                 {
-                    b.Navigation("Batches");
-
                     b.Navigation("Products");
-                });
-
-            modelBuilder.Entity("Domain.Entities.Product", b =>
-                {
-                    b.Navigation("ProductItems");
                 });
 #pragma warning restore 612, 618
         }

@@ -19,53 +19,51 @@ public class ProductRepository : IProductRepository
     /// <summary>
     /// Получить товар по ID.
     /// </summary>
-    public async Task<Product?> GetByIdAsync(Guid id)
+    public Product? GetById(Guid id)
     {
-        return await _dbContext.Products
-            .FirstOrDefaultAsync(p => p.ProductId == id);
+        return _dbContext.Products
+            .FirstOrDefault(p => p.ProductId == id);
     }
 
     /// <summary>
     /// Получить товар по названию, производителю, категории или номеру партии.
     /// </summary>
-    public async Task<Product?> GetByDetailsAsync(string? name, string? manufacturer, string? category,
-        string? batchNumber)
+    public Product? GetByDetails(string? name)
     {
         var query = _dbContext.Products.AsQueryable();
 
         if (!string.IsNullOrEmpty(name))
-            query = query.Where(p => p.Name.Contains(name));
+            query = query.Where(p => p.Name == name);
 
-        if (!string.IsNullOrEmpty(manufacturer))
-            query = query.Where(p => p.Manufacturer.Name.Contains(manufacturer));
-
-        if (!string.IsNullOrEmpty(category))
-            query = query.Where(p => p.Category.Name.Contains(category));
-
-        if (!string.IsNullOrEmpty(batchNumber))
-            query = query.Where(p => p.ProductItems.Any(p => p.Batch.BatchNumber.Contains(batchNumber)));
-
-        return await query.FirstOrDefaultAsync();
+        return query.FirstOrDefault();
     }
 
     /// <summary>
     /// Получить все товары.
     /// </summary>
-    public async Task<ICollection<Product>> GetAllAsync()
+    public ICollection<Product> GetAll()
     {
-        return await _dbContext.Products
+        return _dbContext.Products
             .AsNoTracking()
-            .ToListAsync();
+            .ToList();
     }
 
     /// <summary>
     /// Получить товары, которые находятся на скидке из-за истечения срока годности.
     /// </summary>
-    public async Task<ICollection<ProductItem>> GetDiscountedProductsAsync()
+    public ICollection<Product> GetDiscountedProducts()
     {
-        return await _dbContext.ProductItems
-            .Where(pi => pi.ExpiryDate <= DateTime.Now.AddDays(14))
-            .ToListAsync();
+        var products = _dbContext.Products
+            .Where(p => p.ExpiryDate <= DateTime.Now.AddDays(14).ToUniversalTime())
+            .ToList();
+
+        // Применяем скидку к цене товаров в памяти
+        foreach (var product in products)
+        {
+            product.DiscountedPrice = product.DiscountedPrice;
+        }
+
+        return products;
     }
 
     /// <summary>
@@ -91,9 +89,9 @@ public class ProductRepository : IProductRepository
     /// <summary>
     /// Удалить товар.
     /// </summary>
-    public async Task DeleteAsync(Product product)
+    public void Delete(Product product)
     {
-        _dbContext.Products.Remove(product);
-        await _dbContext.SaveChangesAsync();
+        _dbContext.Products.Remove(product); 
+        _dbContext.SaveChanges();
     }
 }

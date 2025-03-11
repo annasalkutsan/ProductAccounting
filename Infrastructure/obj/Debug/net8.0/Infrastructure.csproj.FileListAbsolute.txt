@@ -16,3 +16,5 @@ D:\Учеба 4 курс\учебная\ProductAccounting\Infrastructure\obj\Deb
 D:\Учеба 4 курс\учебная\ProductAccounting\Infrastructure\obj\Debug\net8.0\ref\Infrastructure.dll
 D:\Учеба 4 курс\учебная\ProductAccounting\Infrastructure\bin\Debug\net8.0\Infrastructure.runtimeconfig.json
 D:\Учеба 4 курс\учебная\ProductAccounting\Infrastructure\obj\Debug\net8.0\Infrastructure.genruntimeconfig.cache
+D:\Учеба 4 курс\учебная\ProductAccounting\Infrastructure\bin\Debug\net8.0\Application.dll
+D:\Учеба 4 курс\учебная\ProductAccounting\Infrastructure\bin\Debug\net8.0\Application.pdb

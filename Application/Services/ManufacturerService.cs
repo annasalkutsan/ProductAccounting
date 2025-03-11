@@ -13,25 +13,21 @@ public class ManufacturerService
     }
 
     // Добавление производителя
-    public async Task<Guid> AddManufacturerAsync(string name, string? contactInfo)
+    public Guid AddManufacturer(string name, string? contactInfo)
     {
-        var existingManufacturer = await _manufacturerRepository.GetByNameAsync(name);
+        var existingManufacturer = _manufacturerRepository.GetByName(name);
         if (existingManufacturer != null)
             throw new ArgumentException("Производитель с таким названием уже существует.");
 
-        var manufacturer = new Manufacturer
-        {
-            Name = name,
-            ContactInfo = contactInfo
-        };
+        var manufacturer = new Manufacturer(name, contactInfo);
 
         return _manufacturerRepository.Add(manufacturer);
     }
 
     // Обновление производителя
-    public async Task<Guid> UpdateManufacturerAsync(Guid manufacturerId, string name, string? contactInfo)
+    public Guid UpdateManufacturer(Guid manufacturerId, string name, string? contactInfo)
     {
-        var manufacturer = await _manufacturerRepository.GetByIdAsync(manufacturerId);
+        var manufacturer = _manufacturerRepository.GetById(manufacturerId);
         if (manufacturer == null)
             throw new ArgumentException("Производитель не найден.");
 
@@ -42,30 +38,30 @@ public class ManufacturerService
     }
 
     // Удаление производителя
-    public async Task DeleteManufacturerAsync(Guid manufacturerId)
+    public void DeleteManufacturer(Guid manufacturerId)
     {
-        var manufacturer = await _manufacturerRepository.GetByIdAsync(manufacturerId);
+        var manufacturer = _manufacturerRepository.GetById(manufacturerId);
         if (manufacturer == null)
             throw new ArgumentException("Производитель не найден.");
 
-        await _manufacturerRepository.DeleteAsync(manufacturer);
+        _manufacturerRepository.Delete(manufacturer);
     }
 
     // Получить производителя по ID
-    public async Task<Manufacturer?> GetManufacturerByIdAsync(Guid manufacturerId)
+    public Manufacturer? GetManufacturerById(Guid manufacturerId)
     {
-        return await _manufacturerRepository.GetByIdAsync(manufacturerId);
+        return _manufacturerRepository.GetById(manufacturerId);
     }
 
     // Получить все производителей
-    public async Task<ICollection<Manufacturer>> GetAllManufacturersAsync()
+    public ICollection<Manufacturer> GetAllManufacturers()
     {
-        return await _manufacturerRepository.GetAllAsync();
+        return _manufacturerRepository.GetAll();
     }
 
     // Получить производителя по названию
-    public async Task<Manufacturer?> GetManufacturerByNameAsync(string name)
+    public Manufacturer? GetManufacturerByName(string name)
     {
-        return await _manufacturerRepository.GetByNameAsync(name);
+        return _manufacturerRepository.GetByName(name);
     }
 }

@@ -3,12 +3,56 @@
   "WorkspaceRootPath": "D:\\\u0423\u0447\u0435\u0431\u0430 4 \u043A\u0443\u0440\u0441\\\u0443\u0447\u0435\u0431\u043D\u0430\u044F\\ProductAccounting\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{47507BAC-D138-4C88-86EC-950E4AA5963E}|ProductAccounting\\ProductAccounting.csproj|d:\\\u0443\u0447\u0435\u0431\u0430 4 \u043A\u0443\u0440\u0441\\\u0443\u0447\u0435\u0431\u043D\u0430\u044F\\productaccounting\\productaccounting\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{47507BAC-D138-4C88-86EC-950E4AA5963E}|ProductAccounting\\ProductAccounting.csproj|solutionrelative:productaccounting\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BB771B9A-0777-4D29-A8EF-A2B569D0F96D}|WinFormsApp\\WinFormsApp.csproj|d:\\\u0443\u0447\u0435\u0431\u0430 4 \u043A\u0443\u0440\u0441\\\u0443\u0447\u0435\u0431\u043D\u0430\u044F\\productaccounting\\winformsapp\\manufacture.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BB771B9A-0777-4D29-A8EF-A2B569D0F96D}|WinFormsApp\\WinFormsApp.csproj|solutionrelative:winformsapp\\manufacture.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{47507BAC-D138-4C88-86EC-950E4AA5963E}|ProductAccounting\\ProductAccounting.csproj|d:\\\u0443\u0447\u0435\u0431\u0430 4 \u043A\u0443\u0440\u0441\\\u0443\u0447\u0435\u0431\u043D\u0430\u044F\\productaccounting\\productaccounting\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{47507BAC-D138-4C88-86EC-950E4AA5963E}|ProductAccounting\\ProductAccounting.csproj|solutionrelative:productaccounting\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{BB771B9A-0777-4D29-A8EF-A2B569D0F96D}|WinFormsApp\\WinFormsApp.csproj|d:\\\u0443\u0447\u0435\u0431\u0430 4 \u043A\u0443\u0440\u0441\\\u0443\u0447\u0435\u0431\u043D\u0430\u044F\\productaccounting\\winformsapp\\manufacture.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{BB771B9A-0777-4D29-A8EF-A2B569D0F96D}|WinFormsApp\\WinFormsApp.csproj|solutionrelative:winformsapp\\manufacture.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB771B9A-0777-4D29-A8EF-A2B569D0F96D}|WinFormsApp\\WinFormsApp.csproj|d:\\\u0443\u0447\u0435\u0431\u0430 4 \u043A\u0443\u0440\u0441\\\u0443\u0447\u0435\u0431\u043D\u0430\u044F\\productaccounting\\winformsapp\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BB771B9A-0777-4D29-A8EF-A2B569D0F96D}|WinFormsApp\\WinFormsApp.csproj|solutionrelative:winformsapp\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB771B9A-0777-4D29-A8EF-A2B569D0F96D}|WinFormsApp\\WinFormsApp.csproj|d:\\\u0443\u0447\u0435\u0431\u0430 4 \u043A\u0443\u0440\u0441\\\u0443\u0447\u0435\u0431\u043D\u0430\u044F\\productaccounting\\winformsapp\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{BB771B9A-0777-4D29-A8EF-A2B569D0F96D}|WinFormsApp\\WinFormsApp.csproj|solutionrelative:winformsapp\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB771B9A-0777-4D29-A8EF-A2B569D0F96D}|WinFormsApp\\WinFormsApp.csproj|d:\\\u0443\u0447\u0435\u0431\u0430 4 \u043A\u0443\u0440\u0441\\\u0443\u0447\u0435\u0431\u043D\u0430\u044F\\productaccounting\\winformsapp\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BB771B9A-0777-4D29-A8EF-A2B569D0F96D}|WinFormsApp\\WinFormsApp.csproj|solutionrelative:winformsapp\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB07F947-4FD2-4449-BABD-B4CCEDF99E28}|Application\\Application.csproj|d:\\\u0443\u0447\u0435\u0431\u0430 4 \u043A\u0443\u0440\u0441\\\u0443\u0447\u0435\u0431\u043D\u0430\u044F\\productaccounting\\application\\services\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BB07F947-4FD2-4449-BABD-B4CCEDF99E28}|Application\\Application.csproj|solutionrelative:application\\services\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB07F947-4FD2-4449-BABD-B4CCEDF99E28}|Application\\Application.csproj|d:\\\u0443\u0447\u0435\u0431\u0430 4 \u043A\u0443\u0440\u0441\\\u0443\u0447\u0435\u0431\u043D\u0430\u044F\\productaccounting\\application\\interfaces\\repositories\\iproductrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BB07F947-4FD2-4449-BABD-B4CCEDF99E28}|Application\\Application.csproj|solutionrelative:application\\interfaces\\repositories\\iproductrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3B782C44-329C-4E76-A32E-28B8A29E7C3B}|Infrastructure\\Infrastructure.csproj|d:\\\u0443\u0447\u0435\u0431\u0430 4 \u043A\u0443\u0440\u0441\\\u0443\u0447\u0435\u0431\u043D\u0430\u044F\\productaccounting\\infrastructure\\repositories\\productrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3B782C44-329C-4E76-A32E-28B8A29E7C3B}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\repositories\\productrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB771B9A-0777-4D29-A8EF-A2B569D0F96D}|WinFormsApp\\WinFormsApp.csproj|D:\\\u0423\u0447\u0435\u0431\u0430 4 \u043A\u0443\u0440\u0441\\\u0443\u0447\u0435\u0431\u043D\u0430\u044F\\ProductAccounting\\winformsapp\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{BB771B9A-0777-4D29-A8EF-A2B569D0F96D}|WinFormsApp\\WinFormsApp.csproj|solutionrelative:winformsapp\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB771B9A-0777-4D29-A8EF-A2B569D0F96D}|WinFormsApp\\WinFormsApp.csproj|d:\\\u0443\u0447\u0435\u0431\u0430 4 \u043A\u0443\u0440\u0441\\\u0443\u0447\u0435\u0431\u043D\u0430\u044F\\productaccounting\\winformsapp\\main.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BB771B9A-0777-4D29-A8EF-A2B569D0F96D}|WinFormsApp\\WinFormsApp.csproj|solutionrelative:winformsapp\\main.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3B782C44-329C-4E76-A32E-28B8A29E7C3B}|Infrastructure\\Infrastructure.csproj|d:\\\u0443\u0447\u0435\u0431\u0430 4 \u043A\u0443\u0440\u0441\\\u0443\u0447\u0435\u0431\u043D\u0430\u044F\\productaccounting\\infrastructure\\repositories\\categoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3B782C44-329C-4E76-A32E-28B8A29E7C3B}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\repositories\\categoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB771B9A-0777-4D29-A8EF-A2B569D0F96D}|WinFormsApp\\WinFormsApp.csproj|d:\\\u0443\u0447\u0435\u0431\u0430 4 \u043A\u0443\u0440\u0441\\\u0443\u0447\u0435\u0431\u043D\u0430\u044F\\productaccounting\\winformsapp\\manufacture.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BB771B9A-0777-4D29-A8EF-A2B569D0F96D}|WinFormsApp\\WinFormsApp.csproj|solutionrelative:winformsapp\\manufacture.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C2246542-D2FE-4C77-BD01-6E1E09513E61}|Domain\\Domain.csproj|d:\\\u0443\u0447\u0435\u0431\u0430 4 \u043A\u0443\u0440\u0441\\\u0443\u0447\u0435\u0431\u043D\u0430\u044F\\productaccounting\\domain\\entities\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C2246542-D2FE-4C77-BD01-6E1E09513E61}|Domain\\Domain.csproj|solutionrelative:domain\\entities\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -39,27 +83,167 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\\u0423\u0447\u0435\u0431\u0430 4 \u043A\u0443\u0440\u0441\\\u0443\u0447\u0435\u0431\u043D\u0430\u044F\\ProductAccounting\\ProductAccounting\\Program.cs",
-              "RelativeDocumentMoniker": "ProductAccounting\\Program.cs",
-              "ToolTip": "D:\\\u0423\u0447\u0435\u0431\u0430 4 \u043A\u0443\u0440\u0441\\\u0443\u0447\u0435\u0431\u043D\u0430\u044F\\ProductAccounting\\ProductAccounting\\Program.cs",
-              "RelativeToolTip": "ProductAccounting\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAkAAAA",
+              "Title": "Manufacture.cs",
+              "DocumentMoniker": "D:\\\u0423\u0447\u0435\u0431\u0430 4 \u043A\u0443\u0440\u0441\\\u0443\u0447\u0435\u0431\u043D\u0430\u044F\\ProductAccounting\\WinFormsApp\\Manufacture.cs",
+              "RelativeDocumentMoniker": "WinFormsApp\\Manufacture.cs",
+              "ToolTip": "D:\\\u0423\u0447\u0435\u0431\u0430 4 \u043A\u0443\u0440\u0441\\\u0443\u0447\u0435\u0431\u043D\u0430\u044F\\ProductAccounting\\WinFormsApp\\Manufacture.cs",
+              "RelativeToolTip": "WinFormsApp\\Manufacture.cs",
+              "ViewState": "AQIAABsAAAAAAAAAAAA5wD0AAAAkAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-04T18:37:38.604Z",
+              "WhenOpened": "2025-03-11T15:23:48.093Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Main.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
-              "DocumentMoniker": "D:\\\u0423\u0447\u0435\u0431\u0430 4 \u043A\u0443\u0440\u0441\\\u0443\u0447\u0435\u0431\u043D\u0430\u044F\\ProductAccounting\\ProductAccounting\\Main.cs",
-              "RelativeDocumentMoniker": "ProductAccounting\\Main.cs",
-              "ToolTip": "D:\\\u0423\u0447\u0435\u0431\u0430 4 \u043A\u0443\u0440\u0441\\\u0443\u0447\u0435\u0431\u043D\u0430\u044F\\ProductAccounting\\ProductAccounting\\Main.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
-              "RelativeToolTip": "ProductAccounting\\Main.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
+              "Title": "Manufacture.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
+              "DocumentMoniker": "D:\\\u0423\u0447\u0435\u0431\u0430 4 \u043A\u0443\u0440\u0441\\\u0443\u0447\u0435\u0431\u043D\u0430\u044F\\ProductAccounting\\WinFormsApp\\Manufacture.cs",
+              "RelativeDocumentMoniker": "WinFormsApp\\Manufacture.cs",
+              "ToolTip": "D:\\\u0423\u0447\u0435\u0431\u0430 4 \u043A\u0443\u0440\u0441\\\u0443\u0447\u0435\u0431\u043D\u0430\u044F\\ProductAccounting\\WinFormsApp\\Manufacture.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
+              "RelativeToolTip": "WinFormsApp\\Manufacture.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-04T18:37:28.053Z",
+              "WhenOpened": "2025-03-11T15:23:44.121Z",
               "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Category.cs",
+              "DocumentMoniker": "D:\\\u0423\u0447\u0435\u0431\u0430 4 \u043A\u0443\u0440\u0441\\\u0443\u0447\u0435\u0431\u043D\u0430\u044F\\ProductAccounting\\WinFormsApp\\Category.cs",
+              "RelativeDocumentMoniker": "WinFormsApp\\Category.cs",
+              "ToolTip": "D:\\\u0423\u0447\u0435\u0431\u0430 4 \u043A\u0443\u0440\u0441\\\u0443\u0447\u0435\u0431\u043D\u0430\u044F\\ProductAccounting\\WinFormsApp\\Category.cs",
+              "RelativeToolTip": "WinFormsApp\\Category.cs",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAxwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-11T15:23:40.103Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Category.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
+              "DocumentMoniker": "D:\\\u0423\u0447\u0435\u0431\u0430 4 \u043A\u0443\u0440\u0441\\\u0443\u0447\u0435\u0431\u043D\u0430\u044F\\ProductAccounting\\WinFormsApp\\Category.cs",
+              "RelativeDocumentMoniker": "WinFormsApp\\Category.cs",
+              "ToolTip": "D:\\\u0423\u0447\u0435\u0431\u0430 4 \u043A\u0443\u0440\u0441\\\u0443\u0447\u0435\u0431\u043D\u0430\u044F\\ProductAccounting\\WinFormsApp\\Category.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
+              "RelativeToolTip": "WinFormsApp\\Category.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-11T15:23:37.227Z",
+              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ProductRepository.cs",
+              "DocumentMoniker": "D:\\\u0423\u0447\u0435\u0431\u0430 4 \u043A\u0443\u0440\u0441\\\u0443\u0447\u0435\u0431\u043D\u0430\u044F\\ProductAccounting\\Infrastructure\\Repositories\\ProductRepository.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Repositories\\ProductRepository.cs",
+              "ToolTip": "D:\\\u0423\u0447\u0435\u0431\u0430 4 \u043A\u0443\u0440\u0441\\\u0443\u0447\u0435\u0431\u043D\u0430\u044F\\ProductAccounting\\Infrastructure\\Repositories\\ProductRepository.cs",
+              "RelativeToolTip": "Infrastructure\\Repositories\\ProductRepository.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAQwCQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-11T15:18:24.65Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "IProductRepository.cs",
+              "DocumentMoniker": "D:\\\u0423\u0447\u0435\u0431\u0430 4 \u043A\u0443\u0440\u0441\\\u0443\u0447\u0435\u0431\u043D\u0430\u044F\\ProductAccounting\\Application\\Interfaces\\Repositories\\IProductRepository.cs",
+              "RelativeDocumentMoniker": "Application\\Interfaces\\Repositories\\IProductRepository.cs",
+              "ToolTip": "D:\\\u0423\u0447\u0435\u0431\u0430 4 \u043A\u0443\u0440\u0441\\\u0443\u0447\u0435\u0431\u043D\u0430\u044F\\ProductAccounting\\Application\\Interfaces\\Repositories\\IProductRepository.cs",
+              "RelativeToolTip": "Application\\Interfaces\\Repositories\\IProductRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-11T15:18:15.354Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Main.Designer.cs",
+              "DocumentMoniker": "D:\\\u0423\u0447\u0435\u0431\u0430 4 \u043A\u0443\u0440\u0441\\\u0443\u0447\u0435\u0431\u043D\u0430\u044F\\ProductAccounting\\WinFormsApp\\Main.Designer.cs",
+              "RelativeDocumentMoniker": "WinFormsApp\\Main.Designer.cs",
+              "ToolTip": "D:\\\u0423\u0447\u0435\u0431\u0430 4 \u043A\u0443\u0440\u0441\\\u0443\u0447\u0435\u0431\u043D\u0430\u044F\\ProductAccounting\\WinFormsApp\\Main.Designer.cs",
+              "RelativeToolTip": "WinFormsApp\\Main.Designer.cs",
+              "ViewState": "AQIAAHsAAAAAAAAAAAAowI4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-11T15:11:22.223Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "CategoryRepository.cs",
+              "DocumentMoniker": "D:\\\u0423\u0447\u0435\u0431\u0430 4 \u043A\u0443\u0440\u0441\\\u0443\u0447\u0435\u0431\u043D\u0430\u044F\\ProductAccounting\\Infrastructure\\Repositories\\CategoryRepository.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Repositories\\CategoryRepository.cs",
+              "ToolTip": "D:\\\u0423\u0447\u0435\u0431\u0430 4 \u043A\u0443\u0440\u0441\\\u0443\u0447\u0435\u0431\u043D\u0430\u044F\\ProductAccounting\\Infrastructure\\Repositories\\CategoryRepository.cs",
+              "RelativeToolTip": "Infrastructure\\Repositories\\CategoryRepository.cs",
+              "ViewState": "AQIAAD0AAAAAAAAAAAAWwCEAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-11T15:00:07.968Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Main.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
+              "DocumentMoniker": "D:\\\u0423\u0447\u0435\u0431\u0430 4 \u043A\u0443\u0440\u0441\\\u0443\u0447\u0435\u0431\u043D\u0430\u044F\\ProductAccounting\\WinFormsApp\\Main.cs",
+              "RelativeDocumentMoniker": "WinFormsApp\\Main.cs",
+              "ToolTip": "D:\\\u0423\u0447\u0435\u0431\u0430 4 \u043A\u0443\u0440\u0441\\\u0443\u0447\u0435\u0431\u043D\u0430\u044F\\ProductAccounting\\WinFormsApp\\Main.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
+              "RelativeToolTip": "WinFormsApp\\Main.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-11T14:31:30.685Z",
+              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Main.cs",
+              "DocumentMoniker": "D:\\\u0423\u0447\u0435\u0431\u0430 4 \u043A\u0443\u0440\u0441\\\u0443\u0447\u0435\u0431\u043D\u0430\u044F\\ProductAccounting\\WinFormsApp\\Main.cs",
+              "RelativeDocumentMoniker": "WinFormsApp\\Main.cs",
+              "ToolTip": "D:\\\u0423\u0447\u0435\u0431\u0430 4 \u043A\u0443\u0440\u0441\\\u0443\u0447\u0435\u0431\u043D\u0430\u044F\\ProductAccounting\\WinFormsApp\\Main.cs",
+              "RelativeToolTip": "WinFormsApp\\Main.cs",
+              "ViewState": "AQIAACMAAAAAAAAAAAD4v0kAAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-11T14:31:10.133Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ProductService.cs",
+              "DocumentMoniker": "D:\\\u0423\u0447\u0435\u0431\u0430 4 \u043A\u0443\u0440\u0441\\\u0443\u0447\u0435\u0431\u043D\u0430\u044F\\ProductAccounting\\Application\\Services\\ProductService.cs",
+              "RelativeDocumentMoniker": "Application\\Services\\ProductService.cs",
+              "ToolTip": "D:\\\u0423\u0447\u0435\u0431\u0430 4 \u043A\u0443\u0440\u0441\\\u0443\u0447\u0435\u0431\u043D\u0430\u044F\\ProductAccounting\\Application\\Services\\ProductService.cs",
+              "RelativeToolTip": "Application\\Services\\ProductService.cs",
+              "ViewState": "AQIAACwAAAAAAAAAAAAAwEUAAAAzAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-11T14:20:32.035Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Manufacture.Designer.cs",
+              "DocumentMoniker": "D:\\\u0423\u0447\u0435\u0431\u0430 4 \u043A\u0443\u0440\u0441\\\u0443\u0447\u0435\u0431\u043D\u0430\u044F\\ProductAccounting\\WinFormsApp\\Manufacture.Designer.cs",
+              "RelativeDocumentMoniker": "WinFormsApp\\Manufacture.Designer.cs",
+              "ToolTip": "D:\\\u0423\u0447\u0435\u0431\u0430 4 \u043A\u0443\u0440\u0441\\\u0443\u0447\u0435\u0431\u043D\u0430\u044F\\ProductAccounting\\WinFormsApp\\Manufacture.Designer.cs",
+              "RelativeToolTip": "WinFormsApp\\Manufacture.Designer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-11T15:11:19.789Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Product.cs",
+              "DocumentMoniker": "D:\\\u0423\u0447\u0435\u0431\u0430 4 \u043A\u0443\u0440\u0441\\\u0443\u0447\u0435\u0431\u043D\u0430\u044F\\ProductAccounting\\Domain\\Entities\\Product.cs",
+              "RelativeDocumentMoniker": "Domain\\Entities\\Product.cs",
+              "ToolTip": "D:\\\u0423\u0447\u0435\u0431\u0430 4 \u043A\u0443\u0440\u0441\\\u0443\u0447\u0435\u0431\u043D\u0430\u044F\\ProductAccounting\\Domain\\Entities\\Product.cs",
+              "RelativeToolTip": "Domain\\Entities\\Product.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-11T14:16:47.245Z"
             }
           ]
         }

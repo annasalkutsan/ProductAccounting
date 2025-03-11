@@ -1,0 +1,16 @@
+D:\Учеба 4 курс\учебная\ProductAccounting\Application\bin\Debug\net8.0\Application.deps.json
+D:\Учеба 4 курс\учебная\ProductAccounting\Application\bin\Debug\net8.0\Application.dll
+D:\Учеба 4 курс\учебная\ProductAccounting\Application\bin\Debug\net8.0\Application.pdb
+D:\Учеба 4 курс\учебная\ProductAccounting\Application\bin\Debug\net8.0\Domain.dll
+D:\Учеба 4 курс\учебная\ProductAccounting\Application\bin\Debug\net8.0\Domain.pdb
+D:\Учеба 4 курс\учебная\ProductAccounting\Application\obj\Debug\net8.0\Application.csproj.AssemblyReference.cache
+D:\Учеба 4 курс\учебная\ProductAccounting\Application\obj\Debug\net8.0\Application.GeneratedMSBuildEditorConfig.editorconfig
+D:\Учеба 4 курс\учебная\ProductAccounting\Application\obj\Debug\net8.0\Application.AssemblyInfoInputs.cache
+D:\Учеба 4 курс\учебная\ProductAccounting\Application\obj\Debug\net8.0\Application.AssemblyInfo.cs
+D:\Учеба 4 курс\учебная\ProductAccounting\Application\obj\Debug\net8.0\Application.csproj.CoreCompileInputs.cache
+D:\Учеба 4 курс\учебная\ProductAccounting\Application\obj\Debug\net8.0\Application.sourcelink.json
+D:\Учеба 4 курс\учебная\ProductAccounting\Application\obj\Debug\net8.0\Applicat.44B5EDA2.Up2Date
+D:\Учеба 4 курс\учебная\ProductAccounting\Application\obj\Debug\net8.0\Application.dll
+D:\Учеба 4 курс\учебная\ProductAccounting\Application\obj\Debug\net8.0\refint\Application.dll
+D:\Учеба 4 курс\учебная\ProductAccounting\Application\obj\Debug\net8.0\Application.pdb
+D:\Учеба 4 курс\учебная\ProductAccounting\Application\obj\Debug\net8.0\ref\Application.dll

@@ -7,10 +7,10 @@ namespace Application.Interfaces.Repositories;
 /// </summary>
 public interface ICategoryRepository
 {
-    Task<Category?> GetByIdAsync(Guid id);
-    Task<Category?> GetByNameAsync(string name);
-    Task<ICollection<Category>> GetAllAsync();
+    Category? GetById(Guid id);
+    Category? GetByName(string name);
+    ICollection<Category> GetAll();
     Guid Add(Category category);
     Guid Update(Category category);
-    Task DeleteAsync(Category category);
+    void Delete(Category category);
 }
